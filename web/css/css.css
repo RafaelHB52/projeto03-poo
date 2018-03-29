@@ -1,0 +1,9 @@
+.foot{
+    background-color: dodgerblue;
+    margin: 0px;
+    padding: 1.25em;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%
+}

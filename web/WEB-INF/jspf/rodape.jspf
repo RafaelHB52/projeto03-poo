@@ -1,6 +1,7 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 
-<footer style="background-color: dodgerblue">
-    <h4 style="color: white">Teste footer</h4>
+<footer class="footer-css">
+    <p class="fonte">Gostou do aplicativo? Nos mande a sua opinião: <a href="mailto:example@example.com">finance@outlook.com</a></p>
+    <p class="fonte">Desenvolvido em Março/2018</p>
 </footer>

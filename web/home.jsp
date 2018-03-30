@@ -3,78 +3,95 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Nome</title>
+        <!-- CABEÇALHO -->
+        <%@include file="WEB-INF/jspf/cabecalho.jspf"%>
+        <title>Finance</title>
     </head>
     <body>
-        <!-- CABEÇALHO E MENU -->
-        <%@include file="WEB-INF/jspf/cabecalho.jspf"%>
+        <!-- MENU -->
         <%@include file="WEB-INF/jspf/menu.jspf"%>
         
-        <h3 align="center">Sobre a aplicação</h3><br/><hr/>
+        <div class="container">
+            <p class="fonte">A <b>Finance</b> é uma aplicação muito útil e de fácil uso, que possui a finalidade de ajudar você no cálculo da amortização e da Tabela Price de forma rápida e eficiente, basta escolher o cálculo desejado e seguir as instruções. :D</p>
+        </div><hr/>
+        
+        <figure id="container">
+            <img src="imagem/purple.jpg"/>
+            <figcaption class="titulo">A <b>Finance</b> foi desenvolvido por: </figcaption>
+        </figure>
         
         <!-- INICIO DESENVOLVEDORES -->
         <div class="card-group">
             <div class="card">
-              <img class="card-img-top" src="..." alt="Jean">
+              <center><img class="card-img-top imagem" src="imagem/noimage.png" alt="Jean"></center>
               <div class="card-body">
-                <h5 class="card-title">Jean</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title titulo">Jean</h5>
+                <p class="card-text fonte">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                <center><a class="fonte btn btn-outline-primary" href="https://github.com/supremesonicbrazil" role="button">GitHub</a></center>
               </div>
             </div>
             
             <div class="card">
-              <img class="card-img-top" src="..." alt="Rafael">
+              <center><img class="card-img-top imagem" src="imagem/noimage.png" alt="Rafael"></center>
               <div class="card-body">
-                <h5 class="card-title">Rafael</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title titulo">Rafael</h5>
+                <p class="card-text fonte">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                <center><a class="fonte btn btn-outline-primary" href="https://github.com/RafaelHB52" role="button">GitHub</a></center>
               </div>
             </div>
             
             <div class="card">
-              <img class="card-img-top" src="..." alt="Willians">
+              <center><img class="card-img-top imagem" src="imagem/noimage.png" alt="Willians"></center>
               <div class="card-body">
-                <h5 class="card-title">Willians</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <h5 class="card-title titulo">Willians</h5>
+                <p class="card-text fonte">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                <center><a class="fonte btn btn-outline-primary" href="https://github.com/wiliansaugusto" role="button">GitHub</a></center>
               </div>
             </div>
-        </div><br/><hr/>
+        </div><hr/>
         <!-- FIM DESENVOLVEDORES -->
         
-        <!-- INICIO CARDS -->
-        <div class="container" align="center">
-            <div class="row">
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+        <figure id="container">
+            <img src="imagem/money.jpg"/>
+            <figcaption class="titulo">Escolha o cálculo desejado</figcaption>
+        </figure>
+        
+        <!-- INICIO DECK DE CARDS -->
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title titulo">Amortização constante</h5>
+                    <p class="card-text fonte">Quer realizar o cálculo da amortização constante?<br>Clique no botão abaixo:</p>
+                    <center><a class="fonte btn btn-outline-primary" href="#" role="button">Clique aqui!</a></center>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
                   </div>
                 </div>
-
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title titulo">Amortização americana</h5>
+                    <p class="card-text fonte">Quer realizar o cálculo da amortização americana?<br>Clique no botão abaixo:</p>
+                    <center><a class="fonte btn btn-outline-primary" href="#" role="button">Clique aqui!</a></center>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
                   </div>
                 </div>
-
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title titulo">Tabela Price</h5>
+                    <p class="card-text fonte">Quer realizar o cálculo da Tabela Price?<br>Clique no botão abaixo:</p>
+                    <center><a class="fonte btn btn-outline-primary" href="#" role="button">Clique aqui!</a></center>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
                   </div>
                 </div>
             </div>
         </div><br/><hr/>
-        <!-- FIM CARDS -->
+        <!-- FIM DECK DE CARDS -->
         
         <!-- RODAPÉ -->
         <%@include file="WEB-INF/jspf/rodape.jspf"%>

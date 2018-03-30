@@ -1,9 +1,49 @@
-.foot{
-    background-color: dodgerblue;
+.fonte{
+    font-family: 'Questrial', sans-serif;
+    font-size: 110%;
+    text-align: center;
+}
+
+.titulo{
+    font-family: 'Questrial', sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar{
+    font-family: 'Questrial', sans-serif;
+    font-size: 100%;
+}
+
+.footer-css{
+    background-color: slateblue;
     margin: 0px;
     padding: 1.25em;
     color: white;
     position: relative;
     bottom: 0;
-    width: 100%
+    width: 100%;
+}
+
+.imagem{
+    width: 180px;
+    height: 180px;
+    border-style: solid;
+    border-image-width: #000000;
+    padding: 8px;
+}
+
+#container {
+  display: inline-block;
+  position: relative;
+}
+
+#container figcaption {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
 }

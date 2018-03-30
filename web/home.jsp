@@ -63,7 +63,7 @@
                   <div class="card-body">
                     <h5 class="card-title titulo">Amortização constante</h5>
                     <p class="card-text fonte">Quer realizar o cálculo da amortização constante?<br>Clique no botão abaixo:</p>
-                    <center><a class="fonte btn btn-outline-primary" href="#" role="button">Clique aqui!</a></center>
+                    <center><a class="fonte btn btn-outline-primary" href="amortizacao-constante.jsp" role="button">Clique aqui!</a></center>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -73,7 +73,7 @@
                   <div class="card-body">
                     <h5 class="card-title titulo">Amortização americana</h5>
                     <p class="card-text fonte">Quer realizar o cálculo da amortização americana?<br>Clique no botão abaixo:</p>
-                    <center><a class="fonte btn btn-outline-primary" href="#" role="button">Clique aqui!</a></center>
+                    <center><a class="fonte btn btn-outline-primary" href="amortizacao-americana.jsp" role="button">Clique aqui!</a></center>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>
@@ -83,7 +83,7 @@
                   <div class="card-body">
                     <h5 class="card-title titulo">Tabela Price</h5>
                     <p class="card-text fonte">Quer realizar o cálculo da Tabela Price?<br>Clique no botão abaixo:</p>
-                    <center><a class="fonte btn btn-outline-primary" href="#" role="button">Clique aqui!</a></center>
+                    <center><a class="fonte btn btn-outline-primary" href="tabela-price.jsp" role="button">Clique aqui!</a></center>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">Last updated 3 mins ago</small>

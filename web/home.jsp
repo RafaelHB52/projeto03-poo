@@ -11,14 +11,18 @@
         <!-- MENU -->
         <%@include file="WEB-INF/jspf/menu.jspf"%>
         
+        <br>
         <div class="container">
-            <p class="fonte">A <b>Finance</b> é uma aplicação muito útil e de fácil uso, que possui a finalidade de ajudar você no cálculo da amortização e da Tabela Price de forma rápida e eficiente, basta escolher o cálculo desejado e seguir as instruções. :D</p>
-        </div><hr/>
+            <p class="fonte">A <b>Finance</b> é uma aplicação muito útil e de fácil uso, que possui a finalidade de ajudar você no cálculo de qualquer amortização de forma rápida e eficiente, basta escolher o cálculo desejado e seguir as instruções :D</p>
+        </div>
+        <hr>
         
-        <figure id="container">
-            <img src="imagem/purple.jpg"/>
-            <figcaption class="titulo">A <b>Finance</b> foi desenvolvido por: </figcaption>
-        </figure>
+        <center>
+            <figure id="container">
+                <img src="imagem/purple.jpg"/>
+                <figcaption class="titulo">A <b>Finance</b> foi desenvolvida por: </figcaption>
+            </figure>
+        </center>
         
         <!-- INICIO DESENVOLVEDORES -->
         <div class="card-group">
@@ -51,10 +55,12 @@
         </div><hr/>
         <!-- FIM DESENVOLVEDORES -->
         
-        <figure id="container">
-            <img src="imagem/money.jpg"/>
-            <figcaption class="titulo">Escolha o cálculo desejado</figcaption>
-        </figure>
+        <center>
+            <figure id="container">
+                <img src="imagem/money.jpg"/>
+                <figcaption class="titulo">Escolha o cálculo desejado:</figcaption>
+            </figure>
+        </center>
         
         <!-- INICIO DECK DE CARDS -->
         <div class="container">

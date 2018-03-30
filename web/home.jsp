@@ -71,30 +71,27 @@
                     <p class="card-text fonte">Quer realizar o cálculo da amortização constante?<br>Clique no botão abaixo:</p>
                     <center><a class="fonte btn btn-outline-primary" href="amortizacao-constante.jsp" role="button">Clique aqui!</a></center>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  <div class="card-footer" style="background-color:#4d004d"></div>
                 </div>
+                
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title titulo">Amortização americana</h5>
                     <p class="card-text fonte">Quer realizar o cálculo da amortização americana?<br>Clique no botão abaixo:</p>
                     <center><a class="fonte btn btn-outline-primary" href="amortizacao-americana.jsp" role="button">Clique aqui!</a></center>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  <div class="card-footer" style="background-color:#4d004d"></div>
                 </div>
+                
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title titulo">Tabela Price</h5>
                     <p class="card-text fonte">Quer realizar o cálculo da Tabela Price?<br>Clique no botão abaixo:</p>
                     <center><a class="fonte btn btn-outline-primary" href="tabela-price.jsp" role="button">Clique aqui!</a></center>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                  <div class="card-footer" style="background-color:#4d004d"></div>
                 </div>
+                
             </div>
         </div><br/><hr/>
         <!-- FIM DECK DE CARDS -->

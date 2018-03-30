@@ -10,7 +10,7 @@
         <%@include file="WEB-INF/jspf/cabecalho.jspf"%>
         <%@include file="WEB-INF/jspf/menu.jspf"%>
         
-        <h3 align="center"><br>Sistema Price de Amortização</h3><br><hr>
+        <h3 class="h3fonte" align="center"><br>Sistema Price de Amortização</h3><br><hr>
         
         <!-- INICIO CONTAINER -->
         <div class="container" align="center">
@@ -19,8 +19,8 @@
                 <div class="col-sm-2">
                     <div class="card" align="center" style="width: 18rem;">
                         <div class="card-body">
-                            <h4 class="card-title">Faça uma simulação</h4>
-                            <form method="post">
+                            <h4 class="card-title titulo">Faça uma simulação</h4>
+                            <form method="post" class="fonte">
                                 Empréstimo inicial (em R$): <input type="text" name="C"><br><br>
                                 Tempo (em meses): <input type="text" name="n"><br><br>
                                 Taxa de juros (% em meses): <input type="text" name="i"><br><br>
@@ -43,7 +43,7 @@
                                 double PMT, juros, saldo = C;
                                 
                                 if (C > 0.0 && n > 0 && i > 0.0){  %>
-                                    <table border="1" style="text-align: center; font-size: 1.5em;">
+                                    <table border="1" class="fonte"; font-size: 1.5em;">
                                         <tr><th>Mês</th><th>Parcela</th><th>Amortização</th><th>Juros</th><th>Saldo Devedor</th></tr>
                                 <%  PMT = C / ((1 - Math.pow(1 + i, -n)) / i);
                                     for (int ct = 1; ct <= n; ct++){
@@ -53,10 +53,10 @@
                                 <%  }  %>
                                     </table>
                             <%  } else {  %>
-                                    <h3>Favor colocar valores maiores que zero.</h3>
+                                    <h3 class="h3fonte">Favor colocar valores maiores que zero.</h3>
                             <%  }
                             } catch (Exception ex){  %>
-                                <h3>Favor colocar valores válidos.</h3>
+                                <h3 class="h3fonte">Favor colocar valores válidos.</h3>
                         <%  }  %>
                         </div>
                     </div>

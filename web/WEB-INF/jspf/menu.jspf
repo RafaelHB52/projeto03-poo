@@ -2,7 +2,7 @@
 <%@ page pageEncoding="UTF-8" %>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: slateblue">
+<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #4d004d">
   <a class="navbar-brand" href="#">Finance</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

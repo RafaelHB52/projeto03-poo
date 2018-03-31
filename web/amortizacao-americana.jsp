@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Amortizaca</title>
+        <title>Amortizacação americana</title>
     </head>
     <body>
         <!-- CABEÇALHO E MENU -->
@@ -76,14 +76,13 @@
                                          mensalidade = amortizacao+mensalidade;
                                          %>
                                          <tr><th><%= ct %><td><%= String.format("%.2f", amortizacao) %></td><td><%= String.format("%.2f", (C*i)) %></td><td><%= String.format("%.2f", C) %><td><%=String.format("%.2f", mensalidade)%></td></td></tr>
-
                                         <%} 
-                                   
                                }
                                %>
+                                    </table>
                                <% }catch(Exception e){%> 
                                 
-                        <h3>Dados inconcistente</h3>
+                        <h3 class="h3fonte">Dados inconsistentes</h3>
                         <%}%>
                         </div>
                     </div>

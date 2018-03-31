@@ -36,7 +36,7 @@
             </div>
             
             <div class="card">
-              <center><img class="card-img-top imagem" src="imagem/noimage.png" alt="Rafael"></center>
+              <center><img class="card-img-top imagem" src="imagem/rafael.png" alt="Rafael"></center>
               <div class="card-body">
                 <h5 class="card-title titulo">Rafael</h5>
                 <p class="card-text fonte">Estudante de Análise e Desenvolvimento de Sistemas</p>

@@ -1,5 +1,5 @@
 <%-- 
-    Document   : amortizacao-americana
+    Document   : amortizacao-constante
     Created on : 31/03/2018, 08:48:06
     Author     : wiliansAugusto
 --%>
@@ -10,14 +10,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Amortizaca</title>
+        <title>Sistema Amortização Constante</title>
     </head>
     <body>
         <!-- CABEÇALHO E MENU -->
         <%@include file="WEB-INF/jspf/cabecalho.jspf"%>
         <%@include file="WEB-INF/jspf/menu.jspf"%>
         
-        <h3 class="h3fonte" align="center"><br>Sistema de Amortizaçao Americana</h3><br><hr>
+        <h3 class="h3fonte" align="center"><br>Sistema de Amortizaçao Constante - SAC</h3><br><hr>
         
         <!-- INICIO CONTAINER -->
         <div class="container" align="center">
@@ -48,40 +48,26 @@
                         
                                 //emprestimo 
                                 double C = Double.parseDouble(request.getParameter("C"));
-                                double amortizacao = 0.0;
                                 //taxa de juros
                                 double i = Double.parseDouble(request.getParameter("i")) / 100;
                                 //tempo
                                 int n = Integer.parseInt(request.getParameter("n"));
                                 int ct=0;
-                                double mensalidade =0;
-                        
-                        
+                                double amortizacao = (C / n);
+                                double saldoDevedor = C;
+                                double jurosMes=  saldoDevedor*i;
+                                double prestacao = amortizacao +jurosMes;
                                       if (C > 0.0 && n > 0 && i > 0.0){  %>
                                     <table border="1" class="fonte"; font-size: 1.5em;">
-                                           <tr><th>Mês</th><th>Amortização</th><th>Juros</th><th>Saldo Devedor</th><th>Pagamento Mensal Acumulado</th></tr>
+                                           <tr><th>Mês</th><th>Amortização</th><th>Juros</th><th>Saldo Devedor</th><th>Pagamento</th></tr>
                                         
-                                        <% do{
-                                        ct++; 
-                                        mensalidade = mensalidade+(C*i);
-                                        %>
-
-                                        <tr><th><%= ct %><td><%= String.format("%.2f", amortizacao) %></td><td><%= String.format("%.2f", (C*i)) %></td><td><%= String.format("%.2f", C) %></td><td><%=String.format("%.2f", mensalidade)%></td></tr>
-                                       
-                                        <% }while(ct < (n-1));
-                                        ct++;                                        
-                                        %> 
-                                         <% if (ct == n){
-                                         amortizacao=C+(C*i);
-                                         mensalidade = amortizacao+mensalidade;
-                                         %>
-                                         <tr><th><%= ct %><td><%= String.format("%.2f", amortizacao) %></td><td><%= String.format("%.2f", (C*i)) %></td><td><%= String.format("%.2f", C) %><td><%=String.format("%.2f", mensalidade)%></td></td></tr>
-
-                                        <%} 
-                                   
-                               }
-                               %>
-                               <% }catch(Exception e){%> 
+                                            <% for (ct=1;ct <=n; ct++){ %>
+                                            <tr><th><%=ct%></th><td><%=String.format("%.2f", amortizacao)%></td><td><%=String.format("%.2f",jurosMes)%></td><td><%=String.format("%.2f",saldoDevedor)%></td><td><%=String.format("%.2f",prestacao)%></td></th></tr>
+                                            <%  saldoDevedor = saldoDevedor-amortizacao;
+                                                jurosMes = saldoDevedor*i; 
+                                                prestacao = amortizacao+jurosMes;} 
+                                            %>
+                                            <% }}catch(Exception e){%> 
                                 
                         <h3>Dados inconcistente</h3>
                         <%}%>
